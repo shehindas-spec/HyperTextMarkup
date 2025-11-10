@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"href="style.css">
+<title></title>
+</head>
+<body>
+<h2>String and Math Functions Example</h2>
+
+<h3>String Functions</h3>
+<p id="string"></p>
+
+<h3>Math Functions</h3>
+<p id="math"></p>
+
+<script>
+let text = "Hello World";
+let result1 = "Original: " + text + "<br>";
+let result2 = "Length: " + text.length + "<br>";
+let result3 = "Uppercase: " + text.toUpperCase() + "<br>";
+let result4 = "Lowercase: " + text.toLowerCase() + "<br>";
+let result5 = "Replace('World' with 'JS'): " + text.replace("World", "JS") + "<br>";
+
+document.getElementById("string").innerHTML = result1 + result2 + result3 + result4 + result5;
+
+let num = 5.7;
+let result6 = "Number: " + num + "<br>";
+let result7 = "Round: " + Math.round(num) + "<br>";
+let result8 = "Square root: " + Math.sqrt(num) + "<br>";
+let result9 = "Power(2^3): " + Math.pow(2, 3) + "<br>";
+let result10 = "Random(0-1): " + Math.random();
+
+document.getElementById("math").innerHTML = result6 + result7 + result8 + result9 + result10;
+</script>
+</body>
+</html>
+

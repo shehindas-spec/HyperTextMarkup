@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Change Background Colour</title>
+</head>
+<body>
+<h1>Change Background Colour</h1>
+<button onclick="chclr()">Change Colour</button>
+<script>
+function chclr() {
+  const colors = ["red", "green", "blue", "yellow", "purple"];
+  const randomColor = colors[Math.floor(Math.random() * colors.length)];
+  document.body.style.backgroundColor = randomColor;
+}
+</script>
+</body>
+</html>
+

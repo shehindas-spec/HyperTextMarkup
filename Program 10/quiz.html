@@ -1,0 +1,33 @@
+<html>
+<head>
+<body>
+<h1>online quiz</h1>
+<h2>1. What is html?</h2>
+<input type="radio" name="q1">Hyper text markup<br><br>
+<input type="radio" name="q1">Hyper text language<br><br>
+<input type="radio" name="q1" id="a1">Hyper text markup language<br><br>
+<input type="radio" name="q1">Hyper text marketing<br><br>
+<h2>2. What is css?</h2>
+<input type="radio" name="q2">cas cading<br><br>
+<input type="radio" name="q2" id="a2">castcading stylesheet <br><br>
+<input type="radio" name="q2">castcadinglanguage<br><br>
+<input type="radio" name="q2">cas stylesheet<br><br>
+<h2>3. What is js?</h2>
+<input type="radio" name="q3" id="a3">java script<br><br>
+<input type="radio" name="q3">java simple<br><br>
+<input type="radio" name="q3">java sheet<br><br>
+<input type="radio" name="q3">java<br><br>
+<input type="submit" value="submit" onclick="check()">
+<h2 id="result">score:</h2>
+<script>
+function check()
+{
+let result=0;
+if(document.getElementById("a1").checked) result++;
+if(document.getElementById("a2").checked) result++;
+if(document.getElementById("a3").checked) result++;
+document.getElementById("result").innerText="your score"+result+"/3";
+}
+</script>
+</body>
+</html>
